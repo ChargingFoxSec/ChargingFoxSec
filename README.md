@@ -28,7 +28,7 @@ Public reports and practice audit writeups that are safe to disclose.
 
 Many real platform findings cannot be published because of disclosure rules, private scopes, or contest/platform restrictions. I only publish reports and notes that are appropriate for public release.
 
-Repository: [my-audit-reports](https://github.com/ChargingFoxSec/my-audit-reports)
+Repository: [my-audit-practice-reports](https://github.com/ChargingFoxSec/my-audit-practice-reports)
 
 ### Web3 CTF Notes
 
