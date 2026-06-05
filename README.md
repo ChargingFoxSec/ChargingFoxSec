@@ -36,6 +36,14 @@ Personal notes on Web3 CTF challenges, exploit patterns, common mistakes, and Re
 
 Repository: [web3-ctf-notes](https://github.com/ChargingFoxSec/web3-ctf-notes)
 
+### Web3 Vulnerability Labs
+
+PoC-backed toy labs for Web3 vulnerability patterns, exploit reasoning, and audit triage notes.
+
+Some labs are inspired by patterns encountered during audit practice, but all public cases are rewritten as standalone toy examples without private project details.
+
+Repository: [web3-vulnerability-labs](https://github.com/ChargingFoxSec/web3-vulnerability-labs)
+
 ## Skills
 
 - **EVM:** Solidity, Foundry, Slither, common DeFi vulnerability classes
