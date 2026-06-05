@@ -22,9 +22,9 @@ It combines an Anchor onchain program, Token-2022 confidential-transfer concepts
 
 Repository: [aster-payroll](https://github.com/ChargingFoxSec/aster-payroll)
 
-### Public Audit Reports
+### Audit Practice Reports
 
-Public reports and practice audit writeups that are safe to disclose.
+Public Web3 audit practice reports, including CodeHawks First Flight reviews and other disclosed security review writeups.
 
 Many real platform findings cannot be published because of disclosure rules, private scopes, or contest/platform restrictions. I only publish reports and notes that are appropriate for public release.
 
@@ -32,7 +32,7 @@ Repository: [my-audit-practice-reports](https://github.com/ChargingFoxSec/my-aud
 
 ### Web3 CTF Notes
 
-Personal notes on Web3 CTF challenges, exploit patterns, and common mistakes.
+Personal notes on Web3 CTF challenges, exploit patterns, common mistakes, and Remix-written Solidity solution contracts.
 
 Repository: [web3-ctf-notes](https://github.com/ChargingFoxSec/web3-ctf-notes)
 
