@@ -7,12 +7,32 @@ I focus on practical vulnerability analysis: proving whether an issue is exploit
 ## Current Focus
 
 - Smart contract security review for EVM protocols
-- Solana and Anchor program security
+- Solana and Anchor security research, program development, and developer tooling
 - Static analysis and security tooling
 - PoC-backed vulnerability labs and audit methodology notes
 - Open-source contributions to Web3 security projects
 
 ## Featured Work
+
+### Web3 Vulnerability Labs
+
+Public collection of 21 PoC-backed vulnerability labs: 14 EVM labs and 7 Soroban-oriented Rust state-machine models.
+
+The cases preserve non-trivial reasoning patterns encountered during real audit practice while rewriting the implementation as standalone, sanitized examples. Each lab documents the vulnerable flow, exploit reasoning, mitigation, and triage boundaries.
+
+[![Web3 Vulnerability Labs Tests](https://github.com/ChargingFoxSec/web3-vulnerability-labs/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ChargingFoxSec/web3-vulnerability-labs/actions/workflows/tests.yml)
+
+- 91 automated tests: 56 Foundry tests and 35 Cargo tests
+- Vulnerable and fixed implementations with runnable PoCs
+- EVM protocol accounting, authorization, oracle, lifecycle, and callback edge cases
+- Soroban-oriented Rust state-machine models for deferred execution and configuration drift
+
+Repository: [web3-vulnerability-labs](https://github.com/ChargingFoxSec/web3-vulnerability-labs)
+
+### Selected Open Source Contributions
+
+- [anza-xyz/kit#1741](https://github.com/anza-xyz/kit/pull/1741) - Fixed v0 preamble accounting in off-chain message size validation. Merged.
+- [anza-xyz/kit#1770](https://github.com/anza-xyz/kit/pull/1770) - Added the missing documentation favicon reference. Merged.
 
 ### Aster Payroll
 
@@ -22,43 +42,19 @@ It combines an Anchor onchain program, Token-2022 confidential-transfer concepts
 
 Repository: [aster-payroll](https://github.com/ChargingFoxSec/aster-payroll)
 
-### Audit Practice Reports
+## Additional Work
 
-Public Web3 audit practice reports, including CodeHawks First Flight reviews and other disclosed security review writeups.
+- [Audit Practice Reports](https://github.com/ChargingFoxSec/my-audit-practice-reports) - Public CodeHawks First Flight reviews and other disclosed Web3 security practice reports.
+- [Web3 CTF Notes](https://github.com/ChargingFoxSec/web3-ctf-notes) - Exploit notes, vulnerability patterns, and Solidity solution contracts from Web3 CTF practice.
 
-Many real platform findings cannot be published because of disclosure rules, private scopes, or contest/platform restrictions. I only publish reports and notes that are appropriate for public release.
-
-Repository: [my-audit-practice-reports](https://github.com/ChargingFoxSec/my-audit-practice-reports)
-
-### Web3 CTF Notes
-
-Personal notes on Web3 CTF challenges, exploit patterns, common mistakes, and Remix-written Solidity solution contracts.
-
-Repository: [web3-ctf-notes](https://github.com/ChargingFoxSec/web3-ctf-notes)
-
-### Web3 Vulnerability Labs
-
-PoC-backed toy labs for Web3 vulnerability patterns, exploit reasoning, and audit triage notes.
-
-Some labs are inspired by patterns encountered during audit practice, but all public cases are rewritten as standalone toy examples without private project details.
-
-Repository: [web3-vulnerability-labs](https://github.com/ChargingFoxSec/web3-vulnerability-labs)
+Many real platform findings cannot be published because of disclosure rules, private scopes, or contest restrictions. I only publish reports and notes that are appropriate for public release.
 
 ## Skills
 
-- **EVM:** Solidity, Foundry, Slither, common DeFi vulnerability classes
-- **Solana:** Rust, Anchor, SPL Token, Token-2022, account validation patterns
+- **EVM:** Solidity, Foundry, Slither, protocol accounting, authorization boundaries, oracle and lifecycle failure modes
+- **Solana:** Rust, Anchor program development, SPL Token and Token-2022 concepts, account validation patterns
 - **Security:** threat modeling, exploit reproduction, PoC writing, impact triage
-- **Engineering:** TypeScript, PHP/Laravel, Python, Git, test-driven debugging
-
-## Open Source Direction
-
-I am currently looking for useful contributions in:
-
-- Slither and other smart contract analysis tools
-- Solana and Anchor developer tooling
-- Public vulnerability labs with runnable tests
-- Documentation and examples that improve security review workflows
+- **Engineering:** TypeScript, PHP/Laravel, Python, Git, Docker, GitHub Actions, test-driven debugging
 
 ## Profiles
 
