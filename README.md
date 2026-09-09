@@ -1,60 +1,61 @@
 # ChargingFoxSec
 
-Web3 security researcher with an EVM audit background, currently expanding into Solana security, developer tooling, and open-source security engineering.
+Web3 security researcher and open-source engineer working across EVM, Solana, and developer tooling.
 
-I focus on practical vulnerability analysis: proving whether an issue is exploitable, writing runnable PoCs, and separating technically valid bugs from findings that are not submit-worthy because of scope, impact, privilege assumptions, or disclosure rules.
+I turn protocol and tooling issues into reproducible engineering evidence: runnable PoCs, regression tests, and focused upstream fixes. My work covers EVM security review, Solana and Anchor development, and static-analysis infrastructure.
+
+Open to Web3 security engineering, protocol engineering, and developer tooling roles.
 
 ## Current Focus
 
-- Smart contract security review for EVM protocols
-- Solana and Anchor security research, program development, and developer tooling
-- Static analysis and security tooling
+- EVM protocol and smart contract security review
+- Solana and Anchor program development and security research
+- Static analysis, fuzzing, and developer tooling
 - PoC-backed vulnerability labs and audit methodology notes
-- Open-source contributions to Web3 security projects
+- Open-source issue reproduction, regression testing, and upstream fixes
 
 ## Featured Work
 
 ### Web3 Vulnerability Labs
 
-Public collection of 21 PoC-backed vulnerability labs: 14 EVM labs and 7 Soroban-oriented Rust state-machine models.
+Public collection of 20+ PoC-backed labs covering Web3 vulnerability patterns across EVM and Soroban-oriented Rust state-machine models.
 
 The cases preserve non-trivial reasoning patterns encountered during real audit practice while rewriting the implementation as standalone, sanitized examples. Each lab documents the vulnerable flow, exploit reasoning, mitigation, and triage boundaries.
 
 [![Web3 Vulnerability Labs Tests](https://github.com/ChargingFoxSec/web3-vulnerability-labs/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/ChargingFoxSec/web3-vulnerability-labs/actions/workflows/tests.yml)
 
-- 91 automated tests: 56 Foundry tests and 35 Cargo tests
+- 90+ automated tests across Foundry and Cargo
 - Vulnerable and fixed implementations with runnable PoCs
 - EVM protocol accounting, authorization, oracle, lifecycle, and callback edge cases
 - Soroban-oriented Rust state-machine models for deferred execution and configuration drift
 
 Repository: [web3-vulnerability-labs](https://github.com/ChargingFoxSec/web3-vulnerability-labs)
 
+### Selected Security Results
+
+- [HackenProof](https://hackenproof.com/hackers/chargingfoxsec) - Paid findings across Critical, High, and Medium severities.
+- [Sherlock](https://audits.sherlock.xyz/watson/ChargingFoxSec) - A validated Medium-severity finding.
+
 ### Selected Open Source Contributions
 
-- [anza-xyz/kit#1741](https://github.com/anza-xyz/kit/pull/1741) - Fixed v0 preamble accounting in off-chain message size validation. Merged.
-- [anza-xyz/kit#1770](https://github.com/anza-xyz/kit/pull/1770) - Added the missing documentation favicon reference. Merged.
+- [crytic/medusa#840](https://github.com/crytic/medusa/pull/840) - Kept Slither diagnostics separate from machine-readable JSON output and added regression coverage. Merged.
+- [anza-xyz/kit#1748](https://github.com/anza-xyz/kit/pull/1748) - Prevented JavaScript protocol hooks from being dispatched as RPC methods and added Node and browser regression coverage. Merged.
+- [anza-xyz/kit#1741](https://github.com/anza-xyz/kit/pull/1741) - Fixed v0 message preamble accounting in off-chain message size validation. Merged.
 
 ### Aster Payroll
 
-Hackathon project: a privacy-preserving payroll settlement demo on Solana.
+Hackathon prototype exploring privacy-preserving payroll settlement on Solana.
 
 It combines an Anchor onchain program, Token-2022 confidential-transfer concepts, a Laravel operator UI, local verification flows, and payroll receipt import logic. The project is a demo and research prototype, not a production custody protocol.
 
 Repository: [aster-payroll](https://github.com/ChargingFoxSec/aster-payroll)
 
-## Additional Work
-
-- [Audit Practice Reports](https://github.com/ChargingFoxSec/my-audit-practice-reports) - Public CodeHawks First Flight reviews and other disclosed Web3 security practice reports.
-- [Web3 CTF Notes](https://github.com/ChargingFoxSec/web3-ctf-notes) - Exploit notes, vulnerability patterns, and Solidity solution contracts from Web3 CTF practice.
-
-Many real platform findings cannot be published because of disclosure rules, private scopes, or contest restrictions. I only publish reports and notes that are appropriate for public release.
-
 ## Skills
 
-- **EVM:** Solidity, Foundry, Slither, protocol accounting, authorization boundaries, oracle and lifecycle failure modes
+- **EVM:** Solidity, Foundry, Slither, fuzzing and invariant testing
 - **Solana:** Rust, Anchor program development, SPL Token and Token-2022 concepts, account validation patterns
-- **Security:** threat modeling, exploit reproduction, PoC writing, impact triage
-- **Engineering:** TypeScript, PHP/Laravel, Python, Git, Docker, GitHub Actions, test-driven debugging
+- **Security:** protocol accounting, authorization boundaries, oracle and lifecycle failure modes, exploit reproduction, impact triage
+- **Engineering:** Go, TypeScript, PHP/Laravel, Python, Git, Docker, GitHub Actions, test-driven debugging
 
 ## Profiles
 
